@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include "meta_data.njk" %}
+        <link rel="stylesheet" href="/css/styles.css">
+        <title>{{ my_data.sitename }} - {{ title }}</title>
+    </head>
+    <body>
+        {% include "header.njk" %}
+        <div>
+            {{ content | safe }}
+        </div>
+        {% include "footer.njk" %}
+    </body>
+</html>
